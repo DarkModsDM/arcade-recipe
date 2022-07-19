@@ -2,15 +2,15 @@ name: DarkModsDM/arcade-recipe
 
 on:
   push:
-    branches: [main]
+    branches: [main,Darkmods]
   pull_request:
-    branches: [main]
+    branches: [main,Darkmods]
 
 permissions: write-all
 
 env:
   CI: false
-  Branches: main
+  Branches: main,Darkmods
   MainBranch: main
   NPMRegistry: https://registry.npmjs.org/
   InstallCommand: npm ci
